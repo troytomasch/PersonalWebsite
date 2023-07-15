@@ -11,10 +11,34 @@ import shenandoah from "../images/shenandoah.jpg";
 import nyc from "../images/nyc.jpeg";
 import hobokennow from "../images/hobokennow.jpg";
 import morgan from "../images/morgan.jpg";
+import SubheaderText from "../atoms/SubheaderText";
 
 const HomeLayout = () => {
+  let contactText = null;
+  if (
+    window.innerWidth < 500 ||
+    (window.innerWidth > 768 && window.innerWidth < 870)
+  ) {
+    contactText = (
+      <SubheaderText
+        text={
+          "You can also get in touch with me at troytomasch@gmail.com. Have a great day!"
+        }
+        textColor={"text-white"}
+      />
+    );
+  } else {
+    contactText = (
+      <TitleText
+        text={
+          "You can also get in touch with me at troytomasch@gmail.com. Have a great day!"
+        }
+      />
+    );
+  }
+
   return (
-    <div className="flex flex-col max-w-screen-lg items-center">
+    <div className="flex flex-col sm:max-w-screen-lg items-center w-11/12">
       <div className="flex md:flex-row flex-col align-middle items-center justify-between content-center gap-6 my-4">
         <TitleText text={"Hello! Welcome to my website!"} />
         <BorderedPicture imagePath={shenandoah} size={"h-80 w-60"} />
@@ -73,11 +97,7 @@ const HomeLayout = () => {
 
       <div className="flex md:flex-row flex-col align-middle items-center justify-between content-center gap-6 my-4">
         <BorderedPicture imagePath={waterfall} size={"h-54 w-80"} />
-        <TitleText
-          text={
-            "You can also get in touch with me at troytomasch@gmail.com. Have a great day!"
-          }
-        />
+        {contactText}
       </div>
     </div>
   );

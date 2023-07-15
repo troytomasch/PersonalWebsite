@@ -16,8 +16,8 @@ const Resume = () => {
       <Header />
 
       <div className="flex flex-col items-center">
-        <div className="max-w-screen-lg">
-          <TitleText text={"Education"} styles={"decoration-wavy"} />
+        <div className="sm:max-w-screen-lg">
+          <TitleText text={"Education"} />
           <Education />
 
           <TitleText text={"Work Experience"} />

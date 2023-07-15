@@ -42,13 +42,13 @@ const ExperienceCard = (props) => {
 
   return (
     <div>
-      <div className="flex flex-row items-end gap-2">
+      <div className="flex sm:flex-row flex-col sm:items-end items-start gap-2">
         <HeaderText text={experience.title} textColor="text-slate-200" />
         <BodyText text=" at " />
         <HeaderText text={experience.company} textColor="text-slate-200" />
       </div>
 
-      <div className="flex justify-between mb-2">
+      <div className="flex sm:flex-row flex-col justify-between mb-2">
         <SubheaderText text={experience.location} />
         <SubheaderText text={dates} />
       </div>
