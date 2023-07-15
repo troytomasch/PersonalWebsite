@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 
 const ProjectsReroute = () => {
   return (
-    <div className="flex flex-row gap-1 m-5">
+    <div className="flex sm:flex-row gap-1 m-5 flex-col">
       <SubheaderText text={"See the"} />
       <Link to="/projects">
         <SubheaderText

@@ -40,12 +40,12 @@ const ProjectCard = (props) => {
   let linksComponent = null;
   if (Object.keys(project.links).length > 0) {
     linksComponent = (
-      <div className="flex flex-row gap-2">
+      <div className="flex sm:flex-row flex-col gap-2">
         <BodyText text="Project Links: " />
         {Object.keys(project.links).map((link) => {
           const externalLink = project.links[link];
           return (
-            <a href={externalLink} target="_blank" rel="noreferrer">
+            <a href={externalLink} target="_blank" rel="noreferrer" key={link}>
               <BodyText text={link} styles={"underline hover:text-slate-200"} />
             </a>
           );
@@ -53,17 +53,10 @@ const ProjectCard = (props) => {
       </div>
     );
   }
-  //   if (project.links.length > 0) {
-  //     let links = "Project Links: |";
-  //     for (let link of project.links) {
-  //       links = links.concat(` ${link} |`);
-  //     }
-  //     skillsComponent = <BodyText text={skills} />;
-  //   }
 
   return (
     <div>
-      <div className="flex justify-between mb-2 items-end">
+      <div className="flex sm:flex-row flex-col justify-between mb-2 sm:items-end items-start">
         <HeaderText text={project.title} />
         <SubheaderText text={dates} />
       </div>

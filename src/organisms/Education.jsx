@@ -12,7 +12,7 @@ const Education = () => {
           textColor="text-slate-200"
         />
 
-        <div className="flex flex-row items-end gap-2">
+        <div className="flex sm:flex-row flex-col items-end gap-2">
           <HeaderText
             text={"Stevens Institute of Technology"}
             textColor="text-slate-600"

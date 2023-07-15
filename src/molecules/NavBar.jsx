@@ -8,10 +8,10 @@ const NavBar = () => {
   const linkTextCSS = "hover:text-white";
 
   // CSS for each link
-  const linkCSS = "m-5";
+  const linkCSS = "sm:m-5 m-1.5";
 
   return (
-    <div className="flex h-16 flex-row items-center justify-center w-full">
+    <div className="flex h-16 flex-row items-center justify-center md:w-full">
       <Link className={linkCSS} to="/">
         <HeaderText text={"Home"} styles={linkTextCSS} />
       </Link>

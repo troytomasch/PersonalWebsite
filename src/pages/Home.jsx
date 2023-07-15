@@ -10,7 +10,7 @@ const Home = () => {
 
   return (
     <div>
-      <div className="bg-slate-400 ">
+      <div className="bg-slate-400">
         <Header />
 
         <div className="flex items-center justify-center">
