@@ -67,7 +67,4 @@ const verifyProjects = (projects) => {
   return;
 };
 
-module.exports = {
-  verifyExperiences,
-  verifyProjects,
-};
+export { verifyExperiences, verifyProjects };
