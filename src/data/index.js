@@ -41,12 +41,13 @@ const experiences = [
   },
   {
     title: "Information Technology Intern",
-    company: "Northern Burlington Regional School District",
+    company: "Northern Burlington County Regional School District",
     location: "Columbus, New Jersey",
     startDate: "06/01/2020",
     endDate: "08/01/2020",
     description: [
-      "Prepared Chromebooks and existing hardware for the upcoming school year",
+      "Prepared Chromebooks for student distribution by performing quality assurance and organizing them according to type",
+      "Set up new and existing hardware to prepare for the upcoming school year",
     ],
     skills: [],
   },
@@ -57,7 +58,8 @@ const experiences = [
     startDate: "06/01/2019",
     endDate: "08/01/2019",
     description: [
-      "Developed spreadsheets to be loaded into IBM Maximo to track linear assets",
+      "Performed data collection, entry, and quality assurance for the linear asset program of the underground utilities around Princeton campus",
+      "Developed spreadsheets in Excel to track the life cycle of the underground utilities across campus by loading them into the IBM Maximo program",
     ],
     skills: [],
   },

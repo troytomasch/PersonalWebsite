@@ -11,7 +11,7 @@ const Projects = () => {
 
   return (
     <div>
-      <Header />
+      <Header page={"Projects"} />
 
       <div className="flex flex-col items-center">
         <div className="max-w-screen-lg">
