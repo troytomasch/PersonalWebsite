@@ -1,6 +1,7 @@
 import React, { useEffect } from "react";
 import Header from "../organisms/Header";
 import TitleText from "../atoms/TitleText";
+import Footer from "../organisms/Footer";
 
 // Not found page 404
 const NotFound = () => {
@@ -12,7 +13,11 @@ const NotFound = () => {
     <div>
       <Header />
 
-      <TitleText text="Sorry this page was not found" />
+      <div className={"m-5 flex gap-7 flex-col"}>
+        <TitleText text="Sorry this page was not found" />
+      </div>
+
+      <Footer />
     </div>
   );
 };
