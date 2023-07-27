@@ -13,7 +13,7 @@ const Resume = () => {
 
   return (
     <div>
-      <Header />
+      <Header page={"Resume"} />
 
       <div className="flex flex-col items-center">
         <div className="sm:max-w-screen-lg">
