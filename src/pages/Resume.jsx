@@ -4,6 +4,7 @@ import TitleText from "../atoms/TitleText";
 import Experiences from "../organisms/Experiences";
 import Education from "../organisms/Education";
 import ProjectsReroute from "../molecules/ProjectsReroute";
+import Footer from "../organisms/Footer";
 
 // Component for resume page to feature my experience and technologies I've worked with
 const Resume = () => {
@@ -27,6 +28,8 @@ const Resume = () => {
           <ProjectsReroute />
         </div>
       </div>
+
+      <Footer />
     </div>
   );
 };
