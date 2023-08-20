@@ -23,9 +23,6 @@ const Dog = () => {
             setImageUrl(data.url);
           });
         })
-        .then((data) => {
-          console.log(data);
-        })
         .catch((error) => {
           console.log(error);
           setImageUrl("https://random-d.uk/api/188.jpg");
