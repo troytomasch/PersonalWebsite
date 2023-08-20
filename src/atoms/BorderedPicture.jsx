@@ -5,9 +5,14 @@ const BorderedPicture = (props) => {
 
   const size = props.size;
 
+  let alt = props.imagePath;
+  if (props.alt) {
+    alt = props.alt;
+  }
+
   const styles = `border-solid border-white rounded-md border-2 ${size}`;
 
-  return <img src={imagePath} alt={imagePath} className={styles}></img>;
+  return <img src={imagePath} alt={alt} className={styles}></img>;
 };
 
 export default BorderedPicture;
