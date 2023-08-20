@@ -12,7 +12,7 @@ const Pokemon = () => {
   const [pokemon, setPokemon] = useState(null);
 
   useEffect(() => {
-    document.title = "Pokemon | Troy Tomasch";
+    document.title = "pokemon | Troy Tomasch";
   }, []);
 
   // useEffect to make pokemon api call
