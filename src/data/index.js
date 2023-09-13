@@ -67,11 +67,36 @@ const experiences = [
 
 const projects = [
   {
+    title: "Slide Puzzle Word Game",
+    startDate: "09/01/2023",
+    endDate: "09/01/2023",
+    description: [
+      "Used React and Tailwind CSS to build a word game where you solve slide puzzles to form phrases",
+      "Wrote the clues, hints, and phrases for the various levels",
+    ],
+    links: {
+      "App Link": "https://slidewordgame.web.app/",
+      "Github Link": "https://github.com/troytomasch/SlideWordGame",
+    },
+  },
+  {
+    title: "Personal Website",
+    startDate: "07/01/2023",
+    endDate: "07/01/2023",
+    description: [
+      "Used React, Tailwind CSS, and Firebase to build a personal website with multiple pages to serve as my web development playground",
+      "Employed an atomic structure with the codebase to promote reusability of the components",
+    ],
+    links: {
+      "Github Link": "https://github.com/troytomasch/PersonalWebsite",
+    },
+  },
+  {
     title: "Senior Design Project: Hoboken Now",
     startDate: "09/01/2022",
     endDate: "05/01/2023",
     description: [
-      "Developed a cross-platform information app for Hoboken residents using ReactNative, Typescript, Firebase, Google Cloud Functions, GraphQL, Node, and Expo ",
+      "Developed a cross-platform information app for Hoboken residents using ReactNative, Typescript, Firebase, Google Cloud Functions, GraphQL, Node, and Expo",
       "Implemented the home, calendar, search, and information pages end to end",
       "Published apps to Apple app store and Google play store",
     ],

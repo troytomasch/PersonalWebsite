@@ -47,7 +47,7 @@ const HomeLayout = () => {
         <BorderedPicture imagePath={mountain} size={"w-80 h-60"} />
         <TitleText
           text={
-            "I'm a 21 year old developer who enjoys developing user-centered web and mobile apps."
+            "I'm a 22 year old developer who enjoys developing user-centered web and mobile apps."
           }
         />
       </div>

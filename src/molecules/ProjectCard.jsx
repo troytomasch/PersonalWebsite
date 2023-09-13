@@ -10,7 +10,8 @@ const ProjectCard = (props) => {
   const startDate = new Date(project.startDate);
   const endDate = new Date(project.endDate);
   let dates;
-  if (startDate === endDate) {
+
+  if (startDate.toISOString() === endDate.toISOString()) {
     dates = `${startDate.toLocaleString("default", {
       month: "long",
     })} ${startDate.getFullYear()}`;
