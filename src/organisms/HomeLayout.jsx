@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect, useRef } from "react";
 import BorderedPicture from "../atoms/BorderedPicture";
 import TitleText from "../atoms/TitleText";
 
@@ -37,9 +37,28 @@ const HomeLayout = () => {
     );
   }
 
+  const homeDiv = useRef(null);
+
+  const observer = new IntersectionObserver((entries) => {
+    // Loop over the entries
+    entries.forEach((entry) => {
+      // If the element is visible
+      if (entry.isIntersecting) {
+        // Add the animation class
+        entry.target.classList.add("animate-slide");
+      }
+    });
+  });
+
+  useEffect(() => {
+    if (homeDiv.current != null) {
+      observer.observe(homeDiv.current);
+    }
+  }, [homeDiv, observer]);
+
   return (
     <div className="flex flex-col sm:max-w-screen-lg items-center w-11/12">
-      <div className="flex md:flex-row flex-col align-middle items-center justify-between content-center gap-6 my-4">
+      <div className="flex md:flex-row flex-col align-middle items-center justify-between content-center gap-6 my-4 motion-reduce:animate-none">
         <TitleText text={"Hello! Welcome to my website!"} />
         <BorderedPicture imagePath={shenandoah} size={"h-80 w-60"} />
       </div>

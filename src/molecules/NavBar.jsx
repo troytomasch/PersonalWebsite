@@ -20,7 +20,8 @@ const NavBar = (props) => {
   }
 
   // Added CSS for hovering over the links
-  const linkTextCSS = "hover:text-white";
+  const linkTextCSS =
+    "hover:text-white transition transform hover:-translate-y-0.5";
 
   // CSS for each link
   const linkCSS = "sm:m-5 m-1.5";

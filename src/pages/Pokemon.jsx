@@ -2,7 +2,6 @@ import React, { useEffect, useState } from "react";
 import Header from "../organisms/Header";
 import TitleText from "../atoms/TitleText";
 import Footer from "../organisms/Footer";
-import BorderedPicture from "../atoms/BorderedPicture";
 import HeaderText from "../atoms/HeaderText";
 import SubheaderText from "../atoms/SubheaderText";
 
@@ -40,9 +39,9 @@ const Pokemon = () => {
     pokemonCard = (
       <div className={"flex flex-col items-center gap-2"}>
         <HeaderText text={pokemon.name} />
-        <BorderedPicture
-          imagePath={pokemon.sprites.front_default}
-          size={"h-40 w-40"}
+        <img
+          src={pokemon.sprites.front_default}
+          className="h-40 w-40 animate-bounce hover:pause"
           alt={pokemon.name}
         />
       </div>
@@ -54,7 +53,15 @@ const Pokemon = () => {
       <Header />
 
       <div className={"m-5 flex gap-7 flex-col"}>
-        <TitleText text="Displays a random pokemon" />
+        <div className="flex flex-row justify-between items-center">
+          <TitleText text="Displays a random pokemon" />
+          <SubheaderText text="Hover over it to stop it" />
+          <img
+            className="w-20 h-20 animate-spin-slow"
+            src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/items/master-ball.png"
+            alt="Pokeball"
+          ></img>
+        </div>
         {pokemonCard}
       </div>
 

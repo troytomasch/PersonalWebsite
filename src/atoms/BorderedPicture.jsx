@@ -1,18 +1,14 @@
 import React from "react";
 
-const BorderedPicture = (props) => {
-  const imagePath = props.imagePath;
-
-  const size = props.size;
-
-  let alt = props.imagePath;
-  if (props.alt) {
-    alt = props.alt;
+const BorderedPicture = ({ imagePath, size, styles, alt }) => {
+  let altText = imagePath;
+  if (alt) {
+    altText = alt;
   }
 
-  const styles = `border-solid border-white rounded-md border-2 ${size}`;
+  const style = `border-solid border-white rounded-md border-2 ${size} ${styles}`;
 
-  return <img src={imagePath} alt={alt} className={styles}></img>;
+  return <img src={imagePath} alt={altText} className={style}></img>;
 };
 
 export default BorderedPicture;

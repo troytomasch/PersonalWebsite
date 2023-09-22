@@ -16,3 +16,9 @@ code {
 @tailwind components;
 @tailwind utilities;
 @import url("https://fonts.googleapis.com/css2?family=Raleway&display=swap");
+
+@layer utilities {
+  .pause {
+    animation-play-state: paused;
+  }
+}

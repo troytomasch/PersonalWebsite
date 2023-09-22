@@ -3,7 +3,6 @@ import Header from "../organisms/Header";
 import TitleText from "../atoms/TitleText";
 import Footer from "../organisms/Footer";
 import BorderedPicture from "../atoms/BorderedPicture";
-import SubheaderText from "../atoms/SubheaderText";
 
 // Random image of a dog using promises
 const Dog = () => {
@@ -33,13 +32,14 @@ const Dog = () => {
   }, []);
 
   // Components for dog image
-  let image = <SubheaderText text={"Loading..."} />;
+  let image = null;
   if (imageUrl) {
     image = (
       <BorderedPicture
         imagePath={imageUrl}
         alt={"Image of a dog"}
-        size="w-100 h-80"
+        size={"w-100 h-80"}
+        styles={"animate-slide"}
       />
     );
   }
