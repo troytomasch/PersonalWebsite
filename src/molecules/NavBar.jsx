@@ -3,10 +3,7 @@ import { Link } from "react-router-dom";
 import HeaderText from "../atoms/HeaderText";
 
 // Component for the navigation bar
-const NavBar = (props) => {
-  // Currently selected heading
-  let selected = props.selected;
-
+const NavBar = ({ selected }) => {
   let homeColor = null;
   let resumeColor = null;
   let projectsColor = null;

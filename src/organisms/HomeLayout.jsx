@@ -41,10 +41,18 @@ const HomeLayout = () => {
     <div className="flex flex-col sm:max-w-screen-lg items-center w-11/12">
       <div className="flex md:flex-row flex-col align-middle items-center justify-between content-center gap-6 my-4 motion-reduce:animate-none">
         <TitleText text={"Hello! Welcome to my website!"} />
-        <BorderedPicture imagePath={shenandoah} size={"h-80 w-60"} />
+        <BorderedPicture
+          imagePath={shenandoah}
+          size={"h-80 w-60"}
+          alt={"Troy in Shenandoah"}
+        />
       </div>
       <div className="flex md:flex-row flex-col align-middle items-center justify-between content-center gap-6 my-4">
-        <BorderedPicture imagePath={mountain} size={"w-80 h-60"} />
+        <BorderedPicture
+          imagePath={mountain}
+          size={"w-80 h-60"}
+          alt={"Troy sitting on a mountain"}
+        />
         <TitleText
           text={
             "I'm a 22 year old developer who enjoys developing user-centered web and mobile apps."
@@ -58,10 +66,18 @@ const HomeLayout = () => {
           }
         />
 
-        <BorderedPicture imagePath={nyc} size={"w-80 h-54"} />
+        <BorderedPicture
+          imagePath={nyc}
+          size={"w-80 h-54"}
+          alt={"Troy in NYC"}
+        />
       </div>
       <div className="flex md:flex-row flex-col align-middle items-center justify-between content-center gap-6 my-4">
-        <BorderedPicture imagePath={hobokennow} size={"h-54 w-72"} />
+        <BorderedPicture
+          imagePath={hobokennow}
+          size={"h-54 w-72"}
+          alt={"Troy presenting his app, Hoboken Now"}
+        />
         <TitleText
           text={
             "I'm always interested in learning new technologies and in the past I've worked with Ruby on Rails, Swift and React Native."
@@ -74,11 +90,19 @@ const HomeLayout = () => {
             "In my free time, I enjoy traveling with my girlfriend and spending time with friends and family."
           }
         />
-        <BorderedPicture imagePath={morgan} size={"h-80 w-54"} />
+        <BorderedPicture
+          imagePath={morgan}
+          size={"h-80 w-54"}
+          alt={"Troy traveling with his girlfriend"}
+        />
       </div>
 
       <div className="flex md:flex-row flex-col align-middle items-center justify-between content-center gap-6 my-4">
-        <BorderedPicture imagePath={firecracker} size={"h-80 w-54"} />
+        <BorderedPicture
+          imagePath={firecracker}
+          size={"h-80 w-54"}
+          alt={"Troy running"}
+        />
         <TitleText
           text={
             "You can often find me running and hiking the trails or hitting the roads on my bike."
@@ -92,11 +116,19 @@ const HomeLayout = () => {
             "Thanks for visiting! Feel free to check out what I've been working on through the resume or projects pages."
           }
         />
-        <BorderedPicture imagePath={arch} size={"h-80 w-54"} />
+        <BorderedPicture
+          imagePath={arch}
+          size={"h-80 w-54"}
+          alt={"Troy in front of an arch"}
+        />
       </div>
 
       <div className="flex md:flex-row flex-col align-middle items-center justify-between content-center gap-6 my-4">
-        <BorderedPicture imagePath={waterfall} size={"h-54 w-80"} />
+        <BorderedPicture
+          imagePath={waterfall}
+          size={"h-54 w-80"}
+          alt={"Troy next to a waterfall"}
+        />
         {contactText}
       </div>
     </div>

@@ -4,10 +4,7 @@ import BodyText from "../atoms/BodyText";
 import SubheaderText from "../atoms/SubheaderText";
 
 // Component for an experience card on the resume page
-const ExperienceCard = (props) => {
-  // The prop that contains the experience object
-  const experience = props.experience;
-
+const ExperienceCard = ({ experience }) => {
   // Formatting the dates for output
   const startDate = new Date(experience.startDate);
   const endDate = new Date(experience.endDate);
