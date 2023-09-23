@@ -3,9 +3,7 @@ import SubheaderText from "../atoms/SubheaderText";
 import BodyText from "../atoms/BodyText";
 import HeaderText from "../atoms/HeaderText";
 
-const ProjectCard = (props) => {
-  const project = props.project;
-
+const ProjectCard = ({ project }) => {
   // Formatting the dates for output
   const startDate = new Date(project.startDate);
   const endDate = new Date(project.endDate);

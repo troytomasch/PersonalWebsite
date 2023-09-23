@@ -3,10 +3,7 @@ import WebsiteTitle from "../atoms/WebsiteTitle";
 import NavBar from "../molecules/NavBar";
 
 // Component for the website header to be included in all pages
-const Header = (props) => {
-  // Currently selected header
-  const page = props.page;
-
+const Header = ({ page }) => {
   return (
     <div className="flex flex-col justify-center items-center mb-5">
       <WebsiteTitle />

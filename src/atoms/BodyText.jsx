@@ -9,7 +9,7 @@ const BodyText = ({ text, textColor, styles }) => {
 
   const cssClass = `text-xl font-raleway font-light ${textColor} ${styles}`;
 
-  return <h2 className={cssClass}>{text}</h2>;
+  return <p className={cssClass}>{text}</p>;
 };
 
 export default BodyText;
