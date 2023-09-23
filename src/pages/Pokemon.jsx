@@ -54,8 +54,10 @@ const Pokemon = () => {
 
       <div className={"m-5 flex gap-7 flex-col"}>
         <div className="flex flex-row justify-between items-center">
-          <TitleText text="Displays a random pokemon" />
-          <SubheaderText text="Hover over it to stop it" />
+          <div className="p-2 flex gap-2 flex-col">
+            <TitleText text="Displays a random pokemon" />
+            <SubheaderText text="Hover over it to stop it" />
+          </div>
           <img
             className="w-20 h-20 animate-spin-slow"
             src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/items/master-ball.png"
