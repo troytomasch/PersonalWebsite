@@ -12,8 +12,12 @@ test("renders home page and all its components", () => {
   expect(screen.getByRole(/link/, { name: "Projects" })).toBeInTheDocument();
 
   // Test to see if footer links are rendered
-  let footerLinks = screen.getAllByRole(/link/, { name: "" });
-  expect(footerLinks.length == 2);
+  expect(
+    screen.getByRole(/link/, { name: "link to my Github" })
+  ).toBeInTheDocument();
+  expect(
+    screen.getByRole(/link/, { name: "link to my Linkedin" })
+  ).toBeInTheDocument();
 
   // Test to see if all the text is in the screen
   expect(screen.getByText(/Hello! Welcome to my website!/)).toBeInTheDocument();
@@ -73,8 +77,8 @@ cleanup();
 test("renders projects page and all its components", async () => {
   render(<App />);
 
-  const projects = screen.getByRole(/link/, { name: "Projects" });
-  userEvent.click(projects);
+  const projectsButton = screen.getByRole(/link/, { name: "Projects" });
+  userEvent.click(projectsButton);
 
   await waitFor(() => {
     // Test to see if the navbar components are rendered
@@ -83,8 +87,12 @@ test("renders projects page and all its components", async () => {
     expect(screen.getByRole(/link/, { name: "Projects" })).toBeInTheDocument();
 
     // Test to see if footer links are rendered
-    let footerLinks = screen.getAllByRole(/link/, { name: "" });
-    expect(footerLinks.length == 2);
+    expect(
+      screen.getByRole(/link/, { name: "link to my Github" })
+    ).toBeInTheDocument();
+    expect(
+      screen.getByRole(/link/, { name: "link to my Linkedin" })
+    ).toBeInTheDocument();
 
     // Check if all list items are present
     let listItems = screen.getAllByRole(/listitem/);
@@ -108,8 +116,12 @@ test("renders resume page and all its components", async () => {
     expect(projectLinks.length == 2);
 
     // Test to see if footer links are rendered
-    let footerLinks = screen.getAllByRole(/link/, { name: "" });
-    expect(footerLinks.length == 2);
+    expect(
+      screen.getByRole(/link/, { name: "link to my Github" })
+    ).toBeInTheDocument();
+    expect(
+      screen.getByRole(/link/, { name: "link to my Linkedin" })
+    ).toBeInTheDocument();
 
     // Test to ensure headers are rendered
     expect(
