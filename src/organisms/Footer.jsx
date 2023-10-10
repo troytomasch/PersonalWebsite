@@ -15,6 +15,7 @@ const Footer = () => {
           target="_blank"
           rel="noreferrer"
           className="hover:drop-shadow-lg hover:text-slate-200"
+          aria-label="link to my Github"
         >
           <FaGithub size="25" />
         </a>
@@ -24,6 +25,7 @@ const Footer = () => {
           target="_blank"
           rel="noreferrer"
           className="hover:drop-shadow-lg hover:text-slate-200"
+          aria-label="link to my Linkedin"
         >
           <FaLinkedin size="25" />
         </a>
