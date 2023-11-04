@@ -21,7 +21,7 @@ const ParallaxEffect = () => {
 
       <ParallaxLayer speed={0.5} factor={2}>
         <h1 className="text-6xl text-white text-center my-48">
-          This is a page where I am trying out the parallax effect
+          This is a page where I'm trying out the parallax effect
         </h1>
       </ParallaxLayer>
 
