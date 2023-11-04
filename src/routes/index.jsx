@@ -6,6 +6,7 @@ import NotFound from "../pages/NotFound";
 import Projects from "../pages/Projects";
 import Dog from "../pages/Dog";
 import Pokemon from "../pages/Pokemon";
+import ParallaxEffect from "../pages/ParallaxEffect";
 
 export default (
   <Router>
@@ -15,6 +16,7 @@ export default (
       <Route path="/projects" element={<Projects />} />
       <Route path="/dog" element={<Dog />} />
       <Route path="/pokemon" element={<Pokemon />} />
+      <Route path="/parallax" element={<ParallaxEffect />} />
       <Route path="*" element={<NotFound />} />
     </Routes>
   </Router>
