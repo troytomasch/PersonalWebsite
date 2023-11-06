@@ -10,7 +10,7 @@ const NotFound = () => {
   }, []);
 
   return (
-    <div>
+    <div className="m-10">
       <Header />
 
       <div className={"m-5 flex gap-7 flex-col"}>

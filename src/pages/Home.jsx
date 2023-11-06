@@ -10,16 +10,14 @@ const Home = () => {
   }, []);
 
   return (
-    <div>
-      <div className="bg-slate-400">
-        <Header page={"Home"} />
+    <div className="m-10">
+      <Header page={"Home"} />
 
-        <div className="flex items-center justify-center">
-          <HomeLayout />
-        </div>
-
-        <Footer />
+      <div className="flex items-center justify-center">
+        <HomeLayout />
       </div>
+
+      <Footer />
     </div>
   );
 };

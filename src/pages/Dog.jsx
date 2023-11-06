@@ -45,7 +45,7 @@ const Dog = () => {
   }
 
   return (
-    <div>
+    <div className="m-10">
       <Header />
 
       <TitleText text="This is a random image of a dog" />

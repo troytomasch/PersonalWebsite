@@ -13,7 +13,7 @@ const Resume = () => {
   }, []);
 
   return (
-    <div>
+    <div className="m-10">
       <Header page={"Resume"} />
 
       <div className="flex flex-col items-center">
