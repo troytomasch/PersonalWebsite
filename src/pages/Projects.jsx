@@ -11,7 +11,7 @@ const Projects = () => {
   }, []);
 
   return (
-    <div>
+    <div className="m-10">
       <Header page={"Projects"} />
 
       <div className="flex flex-col items-center">
