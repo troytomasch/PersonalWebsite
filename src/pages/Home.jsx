@@ -10,7 +10,7 @@ const Home = () => {
   }, []);
 
   return (
-    <div className="m-10">
+    <div className="bg-slate-400 m-10">
       <Header page={"Home"} />
 
       <div className="flex items-center justify-center">
