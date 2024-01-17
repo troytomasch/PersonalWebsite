@@ -1,11 +1,11 @@
 import React from "react";
 import { Parallax, ParallaxLayer } from "@react-spring/parallax";
 
-import backgroundimage from "../images/parallaxbg.jpg";
-import balloon from "../images/hotairballoon.png";
-import ufo from "../images/ufo.png";
-import skydiver from "../images/skydiver.png";
-import bird from "../images/bird.png";
+import backgroundimage from "../images/parallax/parallaxbg.jpg";
+import balloon from "../images/parallax/hotairballoon.png";
+import ufo from "../images/parallax/ufo.png";
+import skydiver from "../images/parallax/skydiver.png";
+import bird from "../images/parallax/bird.png";
 
 // Demonstrates the parallax effect
 const ParallaxEffect = () => {

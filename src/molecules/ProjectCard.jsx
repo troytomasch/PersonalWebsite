@@ -2,6 +2,7 @@ import React from "react";
 import SubheaderText from "../atoms/SubheaderText";
 import BodyText from "../atoms/BodyText";
 import HeaderText from "../atoms/HeaderText";
+import ImageDropdown from "./ImageDropdown";
 
 const ProjectCard = ({ project }) => {
   // Formatting the dates for output
@@ -53,6 +54,12 @@ const ProjectCard = ({ project }) => {
     );
   }
 
+  // Images
+  let images = null;
+  if (Object.keys(project.images).length > 0) {
+    images = <ImageDropdown imagePaths={project.images} />;
+  }
+
   return (
     <div>
       <div className="flex sm:flex-row flex-col justify-between mb-2 sm:items-end items-start">
@@ -64,6 +71,8 @@ const ProjectCard = ({ project }) => {
         {description}
         {linksComponent}
       </div>
+
+      <div>{images}</div>
     </div>
   );
 };

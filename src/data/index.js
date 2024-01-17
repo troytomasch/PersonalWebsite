@@ -78,6 +78,7 @@ const projects = [
       "App Link": "https://slidewordgame.web.app/",
       "Github Link": "https://github.com/troytomasch/SlideWordGame",
     },
+    images: {},
   },
   {
     title: "Personal Website",
@@ -90,6 +91,7 @@ const projects = [
     links: {
       "Github Link": "https://github.com/troytomasch/PersonalWebsite",
     },
+    images: {},
   },
   {
     title: "Senior Design Project: Hoboken Now",
@@ -106,6 +108,7 @@ const projects = [
       "Google Play Store":
         "https://play.google.com/store/apps/details?id=tcb.android&hl=en_US&gl=US",
     },
+    images: {},
   },
   {
     title: "Web Programming II Project",
@@ -116,6 +119,7 @@ const projects = [
       "Utilized the Spotify API to develop the end-to-end functionality for a music player",
     ],
     links: {},
+    images: {},
   },
   {
     title: "Web Programming I Project",
@@ -126,6 +130,7 @@ const projects = [
       "Developed user login, registration, and profile features from the routes and the backend functionality to the frontend appearance and client-side scripts",
     ],
     links: {},
+    images: {},
   },
   {
     title: "Agile Project Management Project",
@@ -136,6 +141,7 @@ const projects = [
       "Conducted the project virtually using Agile methodology with two-week sprints and the tools Trello by Atlassian, GitHub, Microsoft VS Code, and Zoom",
     ],
     links: {},
+    images: {},
   },
 ];
 
