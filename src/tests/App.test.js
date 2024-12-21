@@ -23,7 +23,7 @@ test("renders home page and all its components", () => {
   expect(screen.getByText(/Hello! Welcome to my website!/)).toBeInTheDocument();
   expect(
     screen.getByText(
-      /I'm a 22 year old developer who enjoys developing user-centered web and mobile apps./
+      /I'm a 23 year old software engineer who enjoys developing user-centered web and mobile apps./
     )
   ).toBeInTheDocument();
   expect(
