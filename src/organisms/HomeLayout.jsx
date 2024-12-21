@@ -121,7 +121,7 @@ const HomeLayout = () => {
       <div className="flex md:flex-row flex-col align-middle items-center justify-between content-center gap-6 my-4">
         <TitleText
           text={
-            "In my free time, I enjoy traveling with my girlfriend and spending time with friends and family."
+            "In my free time, I enjoy traveling with my fiancée and spending time with friends and family."
           }
         />
         <BorderedPicture

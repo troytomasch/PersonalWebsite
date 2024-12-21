@@ -38,7 +38,7 @@ test("renders home page and all its components", () => {
   ).toBeInTheDocument();
   expect(
     screen.getByText(
-      /In my free time, I enjoy traveling with my girlfriend and spending time with friends and family./
+      /In my free time, I enjoy traveling with my fiancée and spending time with friends and family./
     )
   ).toBeInTheDocument();
   expect(
