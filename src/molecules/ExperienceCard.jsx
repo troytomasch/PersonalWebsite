@@ -5,14 +5,22 @@ import SubheaderText from "../atoms/SubheaderText";
 
 // Component for an experience card on the resume page
 const ExperienceCard = ({ experience }) => {
-  // Formatting the dates for output
-  const startDate = new Date(experience.startDate);
-  const endDate = new Date(experience.endDate);
-  const dates = `${startDate.toLocaleString("default", {
-    month: "long",
-  })} ${startDate.getFullYear()} - ${endDate.toLocaleString("default", {
-    month: "long",
-  })} ${endDate.getFullYear()}`;
+  const getDates = () => {
+    // Formatting the dates for output
+    const startDate = new Date(experience.startDate);
+    let dateText = `${startDate.toLocaleString("default", {
+      month: "long",
+    })} ${startDate.getFullYear()} - `;
+
+    if (experience.endDate === "Current") return dateText + "Current";
+    const endDate = new Date(experience.endDate);
+    return (
+      dateText +
+      `${endDate.toLocaleString("default", {
+        month: "long",
+      })} ${endDate.getFullYear()}`
+    );
+  };
 
   // List for description
   const description = (
@@ -30,10 +38,7 @@ const ExperienceCard = ({ experience }) => {
   // List of skills used
   let skillsComponent = null;
   if (experience.skills.length > 0) {
-    let skills = "Skills Used: |";
-    for (let skill of experience.skills) {
-      skills = skills.concat(` ${skill} |`);
-    }
+    let skills = "Skills Used: " + experience.skills.join(" | ");
     skillsComponent = <BodyText text={skills} />;
   }
 
@@ -47,7 +52,7 @@ const ExperienceCard = ({ experience }) => {
 
       <div className="flex sm:flex-row flex-col justify-between mb-2">
         <SubheaderText text={experience.location} />
-        <SubheaderText text={dates} />
+        <SubheaderText text={getDates()} />
       </div>
 
       <div className="m-2">
