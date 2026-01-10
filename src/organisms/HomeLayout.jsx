@@ -85,7 +85,7 @@ const HomeLayout = () => {
         />
         <TitleText
           text={
-            "I'm a 23 year old software engineer who enjoys developing user-centered web and mobile apps."
+            "I'm a software engineer who enjoys developing user-centered web and mobile apps."
           }
         />
       </div>

@@ -1,6 +1,6 @@
 const experiences = [
   {
-    title: "Junior Full Stack Mobile Engineer",
+    title: "Full Stack Mobile Engineer",
     company: "InStride Health",
     location: "Remote",
     startDate: "03/04/2024",
@@ -8,7 +8,7 @@ const experiences = [
     description: [
       "Writing software to help support treatment that changes the lives of kids, teens, and young adults ages 7 to 22 with anxiety and/or OCD, along with their families",
     ],
-    skills: ["Go", "React", "Flutter"],
+    skills: ["Go", "React", "Flutter", "AWS"],
   },
   {
     title: "Full Stack Software Engineering Intern",
