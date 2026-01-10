@@ -1,7 +1,7 @@
-// import { render, screen, cleanup, waitFor } from "@testing-library/react";
-// import userEvent from "@testing-library/user-event";
-// import App from "../App";
-// import { experiences, projects } from "../data";
+import { render, screen, cleanup, waitFor } from "@testing-library/react";
+import userEvent from "@testing-library/user-event";
+import App from "../App";
+import { experiences, projects } from "../data";
 
 // test("renders home page and all its components", () => {
 //   render(<App />);
@@ -74,68 +74,68 @@
 
 // cleanup();
 
-// test("renders projects page and all its components", async () => {
-//   render(<App />);
+test("renders projects page and all its components", async () => {
+  render(<App />);
 
-//   const projectsButton = screen.getByRole(/link/, { name: "Projects" });
-//   userEvent.click(projectsButton);
+  const projectsButton = screen.getByRole(/link/, { name: "Projects" });
+  userEvent.click(projectsButton);
 
-//   await waitFor(() => {
-//     // Test to see if the navbar components are rendered
-//     expect(screen.getByRole(/link/, { name: "Home" })).toBeInTheDocument();
-//     expect(screen.getByRole(/link/, { name: "Resume" })).toBeInTheDocument();
-//     expect(screen.getByRole(/link/, { name: "Projects" })).toBeInTheDocument();
+  await waitFor(() => {
+    // Test to see if the navbar components are rendered
+    expect(screen.getByRole(/link/, { name: "Home" })).toBeInTheDocument();
+    expect(screen.getByRole(/link/, { name: "Resume" })).toBeInTheDocument();
+    expect(screen.getByRole(/link/, { name: "Projects" })).toBeInTheDocument();
 
-//     // Test to see if footer links are rendered
-//     expect(
-//       screen.getByRole(/link/, { name: "link to my Github" })
-//     ).toBeInTheDocument();
-//     expect(
-//       screen.getByRole(/link/, { name: "link to my Linkedin" })
-//     ).toBeInTheDocument();
+    // Test to see if footer links are rendered
+    expect(
+      screen.getByRole(/link/, { name: "link to my Github" })
+    ).toBeInTheDocument();
+    expect(
+      screen.getByRole(/link/, { name: "link to my Linkedin" })
+    ).toBeInTheDocument();
 
-//     // Check if all list items are present
-//     let listItems = screen.getAllByRole(/listitem/);
-//     expect(listItems.length == projects.length);
-//   });
-// });
+    // Check if all list items are present
+    let listItems = screen.getAllByRole(/listitem/);
+    expect(listItems.length == projects.length);
+  });
+});
 
-// cleanup();
+cleanup();
 
-// test("renders resume page and all its components", async () => {
-//   render(<App />);
+test("renders resume page and all its components", async () => {
+  render(<App />);
 
-//   const resume = screen.getByRole(/link/, { name: "Resume" });
-//   userEvent.click(resume);
+  const resume = screen.getByRole(/link/, { name: "Resume" });
+  userEvent.click(resume);
 
-//   await waitFor(() => {
-//     // Test to see if the navbar components are rendered
-//     expect(screen.getByRole(/link/, { name: "Home" })).toBeInTheDocument();
-//     expect(screen.getByRole(/link/, { name: "Resume" })).toBeInTheDocument();
-//     let projectLinks = screen.getAllByRole(/link/, { name: "Projects" });
-//     expect(projectLinks.length == 2);
+  await waitFor(() => {
+    // Test to see if the navbar components are rendered
+    expect(screen.getByRole(/link/, { name: "Home" })).toBeInTheDocument();
+    expect(screen.getByRole(/link/, { name: "Resume" })).toBeInTheDocument();
+    let projectLinks = screen.getAllByRole(/link/, { name: "Projects" });
+    expect(projectLinks.length == 2);
 
-//     // Test to see if footer links are rendered
-//     expect(
-//       screen.getByRole(/link/, { name: "link to my Github" })
-//     ).toBeInTheDocument();
-//     expect(
-//       screen.getByRole(/link/, { name: "link to my Linkedin" })
-//     ).toBeInTheDocument();
+    // Test to see if footer links are rendered
+    expect(
+      screen.getByRole(/link/, { name: "link to my Github" })
+    ).toBeInTheDocument();
+    expect(
+      screen.getByRole(/link/, { name: "link to my Linkedin" })
+    ).toBeInTheDocument();
 
-//     // Test to ensure headers are rendered
-//     expect(
-//       screen.getByRole(/heading/, { name: "Education" })
-//     ).toBeInTheDocument();
-//     expect(
-//       screen.getByRole(/heading/, { name: "Work Experience" })
-//     ).toBeInTheDocument();
-//     expect(
-//       screen.getByRole(/heading/, { name: "Projects" })
-//     ).toBeInTheDocument();
+    // Test to ensure headers are rendered
+    expect(
+      screen.getByRole(/heading/, { name: "Education" })
+    ).toBeInTheDocument();
+    expect(
+      screen.getByRole(/heading/, { name: "Work Experience" })
+    ).toBeInTheDocument();
+    expect(
+      screen.getByRole(/heading/, { name: "Projects" })
+    ).toBeInTheDocument();
 
-//     // Check if all list items are present
-//     let listItems = screen.getAllByRole(/listitem/);
-//     expect(listItems.length == experiences.length);
-//   });
-// });
+    // Check if all list items are present
+    let listItems = screen.getAllByRole(/listitem/);
+    expect(listItems.length == experiences.length);
+  });
+});
