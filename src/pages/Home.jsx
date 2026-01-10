@@ -1,7 +1,7 @@
 import React, { useEffect } from "react";
 import Header from "../organisms/Header";
 import Footer from "../organisms/Footer";
-import HomeLayout from "../organisms/HomeLayout";
+import NewHomeLayout from "../organisms/NewHomeLayout";
 
 // Component for the home page
 const Home = () => {
@@ -14,7 +14,8 @@ const Home = () => {
       <Header page={"Home"} />
 
       <div className="flex items-center justify-center">
-        <HomeLayout />
+        {/* <HomeLayout /> */}
+        <NewHomeLayout />
       </div>
 
       <Footer />
